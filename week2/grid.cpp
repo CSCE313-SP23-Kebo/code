@@ -13,30 +13,30 @@ int main() {
   cout << "Enter width and height: ";
   cin >> width >> height;
 
-  // Create array (Pointer to pointer)
+  // Allocate a 2D array of pointers (Rows)
   int** grid = new int*[height];
-
- // Allocate memory for rows
+  
+  // Allocate data pointed to in each row (columns)  
   for (size_t y = 0; y < height; ++y) {
     grid[y] = new int[width];
   }
 
-// Populate with numbers
+  // Populate the grid with numbers
   for (size_t y = 0; y < height; ++y) {
     for (size_t x = 0; x < width; ++x) {
       grid[y][x] = (x + 1) + (width * y);
     }
   }
 
-// Print content of data structure
+  // Print
   for (size_t y = 0; y < height; ++y) {
     for (size_t x = 0; x < width; ++x) {
       cout << grid[y][x] << " ";
     }
     cout << endl;
   }
-  
-// Deallocate 
+
+// Deallocate
   for (size_t y = 0; y < height; ++y) {
     delete[] grid[y];
   }
