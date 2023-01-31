@@ -1,0 +1,215 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.3 169864 12356 ?        Ss   Aug23   4:42 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Aug23   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Aug23   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Aug23   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   Aug23   0:00 [netns]
+root           7  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kworker/0:0H-events_highpri]
+root          10  0.0  0.0      0     0 ?        I<   Aug23   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    Aug23   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    Aug23   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    Aug23   0:03 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    Aug23   2:32 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    Aug23   0:14 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    Aug23   0:00 [idle_inject/0]
+root          17  0.0  0.0      0     0 ?        S    Aug23   0:00 [cpuhp/0]
+root          18  0.0  0.0      0     0 ?        S    Aug23   0:00 [cpuhp/1]
+root          19  0.0  0.0      0     0 ?        S    Aug23   0:00 [idle_inject/1]
+root          20  0.0  0.0      0     0 ?        S    Aug23   0:12 [migration/1]
+root          21  0.0  0.0      0     0 ?        S    Aug23   0:04 [ksoftirqd/1]
+root          23  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kworker/1:0H-kblockd]
+root          24  0.0  0.0      0     0 ?        S    Aug23   0:00 [kdevtmpfs]
+root          25  0.0  0.0      0     0 ?        I<   Aug23   0:00 [inet_frag_wq]
+root          26  0.0  0.0      0     0 ?        S    Aug23   0:00 [kauditd]
+root          27  0.0  0.0      0     0 ?        S    Aug23   0:02 [khungtaskd]
+root          28  0.0  0.0      0     0 ?        S    Aug23   0:00 [oom_reaper]
+root          29  0.0  0.0      0     0 ?        I<   Aug23   0:00 [writeback]
+root          30  0.0  0.0      0     0 ?        S    Aug23   1:58 [kcompactd0]
+root          31  0.0  0.0      0     0 ?        SN   Aug23   0:00 [ksmd]
+root          32  0.0  0.0      0     0 ?        SN   Aug23   0:11 [khugepaged]
+root          79  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kintegrityd]
+root          80  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kblockd]
+root          81  0.0  0.0      0     0 ?        I<   Aug23   0:00 [blkcg_punt_bio]
+root          82  0.0  0.0      0     0 ?        I<   Aug23   0:00 [tpm_dev_wq]
+root          83  0.0  0.0      0     0 ?        I<   Aug23   0:00 [ata_sff]
+root          84  0.0  0.0      0     0 ?        I<   Aug23   0:00 [md]
+root          85  0.0  0.0      0     0 ?        I<   Aug23   0:00 [edac-poller]
+root          86  0.0  0.0      0     0 ?        I<   Aug23   0:00 [devfreq_wq]
+root          87  0.0  0.0      0     0 ?        S    Aug23   0:00 [watchdogd]
+root          89  0.0  0.0      0     0 ?        I<   Aug23   0:01 [kworker/0:1H-kblockd]
+root          91  0.0  0.0      0     0 ?        S    Aug23   0:17 [kswapd0]
+root          92  0.0  0.0      0     0 ?        S    Aug23   0:00 [ecryptfs-kthrea]
+root          94  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kthrotld]
+root          95  0.0  0.0      0     0 ?        I<   Aug23   0:00 [acpi_thermal_pm]
+root          96  0.0  0.0      0     0 ?        S    Aug23   0:00 [scsi_eh_0]
+root          97  0.0  0.0      0     0 ?        I<   Aug23   0:00 [scsi_tmf_0]
+root          98  0.0  0.0      0     0 ?        I<   Aug23   0:00 [nvme-wq]
+root          99  0.0  0.0      0     0 ?        I<   Aug23   0:00 [nvme-reset-wq]
+root         100  0.0  0.0      0     0 ?        I<   Aug23   0:00 [nvme-delete-wq]
+root         101  0.0  0.0      0     0 ?        I<   Aug23   0:00 [vfio-irqfd-clea]
+root         103  0.0  0.0      0     0 ?        I<   Aug23   0:10 [kworker/1:1H-kblockd]
+root         104  0.0  0.0      0     0 ?        I<   Aug23   0:00 [mld]
+root         105  0.0  0.0      0     0 ?        I<   Aug23   0:00 [ipv6_addrconf]
+root         115  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kstrp]
+root         118  0.0  0.0      0     0 ?        I<   Aug23   0:00 [zswap-shrink]
+root         119  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kworker/u5:0]
+root         126  0.0  0.0      0     0 ?        I<   Aug23   0:00 [charger_manager]
+root         127  0.0  0.0      0     0 ?        S    Aug23   0:29 [jbd2/sda1-8]
+root         128  0.0  0.0      0     0 ?        I<   Aug23   0:00 [ext4-rsv-conver]
+root         131  0.0  0.0      0     0 ?        S    Aug23   0:00 [hwrng]
+root         170  0.0  0.9 132676 37708 ?        S<s  Aug23   0:25 /lib/systemd/systemd-journald
+root         196  0.0  0.0      0     0 ?        I<   Aug23   0:00 [ipmi-msghandler]
+root         207  0.0  0.1  11192  6272 ?        Ss   Aug23   0:06 /lib/systemd/systemd-udevd
+root         239  0.0  0.0      0     0 ?        I<   Aug23   0:00 [cryptd]
+root         342  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kaluad]
+root         343  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kmpath_rdacd]
+root         344  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kmpathd]
+root         345  0.0  0.0      0     0 ?        I<   Aug23   0:00 [kmpath_handlerd]
+root         346  0.0  0.4 280140 18208 ?        SLsl Aug23   5:46 /sbin/multipathd -d -s
+systemd+     505  0.0  0.1  27392  6572 ?        Ss   Aug23   0:15 /lib/systemd/systemd-networkd
+systemd+     509  0.0  0.2  24676 11296 ?        Ss   Aug23   0:20 /lib/systemd/systemd-resolved
+root         543  0.0  0.1 237480  6420 ?        Ssl  Aug23   0:45 /usr/lib/accountsservice/accounts-daemon
+avahi        544  0.0  0.0   8540  2908 ?        Ss   Aug23   0:01 avahi-daemon: running [linux.local]
+message+     548  0.0  0.1   9072  5400 ?        Ss   Aug23   0:23 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         549  0.0  0.3 261428 12092 ?        Ssl  Aug23   1:03 /usr/sbin/NetworkManager --no-daemon
+root         572  0.0  0.3  37340 14604 ?        Ss   Aug23   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         573  0.0  0.2 239800  9572 ?        Ssl  Aug23   1:20 /usr/lib/policykit-1/polkitd --no-debug
+syslog       576  0.0  0.1 224524  4976 ?        Ssl  Aug23   0:04 /usr/sbin/rsyslogd -n -iNONE
+root         584  0.0  0.1 234736  5356 ?        Ssl  Aug23   0:00 /usr/libexec/switcheroo-control
+root         589  0.0  0.2 393456  9436 ?        Ssl  Aug23   0:03 /usr/lib/udisks2/udisksd
+root         596  0.0  0.0  13684  2888 ?        Ss   Aug23   0:13 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+avahi        621  0.0  0.0   8348   320 ?        S    Aug23   0:00 avahi-daemon: chroot helper
+root         692  0.0  0.1 241360  6632 ?        Ssl  Aug23   0:00 /usr/sbin/ModemManager
+_chrony      705  0.0  0.0  13024  2364 ?        S    Aug23   0:01 /usr/sbin/chronyd -F -1
+_chrony      706  0.0  0.0   4696   184 ?        S    Aug23   0:00 /usr/sbin/chronyd -F -1
+root         767  0.0  0.1 403636  6440 ?        Ssl  Aug23   0:40 /snap/canonical-livepatch/146/canonical-livepatchd
+root         775  0.0  0.3 115752 14216 ?        Ssl  Aug23   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         783  0.0  0.5 1123376 23840 ?       Ssl  Aug23  28:12 /usr/bin/containerd
+root         847  0.0  0.2 928204 10164 ?        Ssl  Aug23   4:31 /usr/bin/google_guest_agent
+root         848  0.0  0.2 860884 10536 ?        Ssl  Aug23   5:30 /usr/bin/google_osconfig_agent
+root         850  0.0  0.0   5700  3000 ?        Ss   Aug23   2:38 /usr/sbin/inetd
+daemon      1114  0.0  0.0   3800  2220 ?        Ss   Aug23   0:00 /usr/sbin/atd -f
+root        1121  0.0  0.7 1679068 30992 ?       Ssl  Aug23  11:28 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+root        1134  0.0  0.0   7360  2072 ttyS0    Ss+  Aug23   0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+root        1137  0.0  0.0   5836  1776 tty1     Ss+  Aug23   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root        1148  0.0  0.1  12180  5612 ?        Ss   Aug23   0:09 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root        1152  0.0  0.2  19060  9136 ?        Ss   Aug23   0:08 /lib/systemd/systemd-logind
+root        1172  0.0  0.0   8544  2936 ?        Ss   Aug23   0:04 /usr/sbin/cron -f
+root        1227  0.0  0.0   2496   516 ?        S    Aug23   0:00 bpfilter_umh
+davidke+    1479  0.0  0.2  19492  9076 ?        Ss   Aug23   0:01 /lib/systemd/systemd --user
+davidke+    1480  0.0  0.1 104840  4184 ?        S    Aug23   0:00 (sd-pam)
+davidke+    1487  0.0  0.4 658052 17992 ?        SNsl Aug23   0:01 /usr/libexec/tracker-miner-fs
+davidke+    1505  0.0  0.1   8200  4860 ?        Ss   Aug23   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+rtkit       1508  0.0  0.0 152936  2996 ?        SNsl Aug23   0:30 /usr/libexec/rtkit-daemon
+davidke+    1513  0.0  0.1 238868  6088 ?        Ssl  Aug23   0:00 /usr/libexec/gvfsd
+davidke+    1529  0.0  0.1 378344  5236 ?        Sl   Aug23   0:00 /usr/libexec/gvfsd-fuse /run/user/1001/gvfs -f -o big_writes
+davidke+    1538  0.0  0.1 313188  7192 ?        Ssl  Aug23   0:02 /usr/libexec/gvfs-udisks2-volume-monitor
+davidke+    1544  0.0  0.1 237080  4888 ?        Ssl  Aug23   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+davidke+    1548  0.0  0.1 315876  6560 ?        Ssl  Aug23   1:53 /usr/libexec/gvfs-afc-volume-monitor
+davidke+    1553  0.0  0.1 235028  5012 ?        Ssl  Aug23   0:00 /usr/libexec/gvfs-goa-volume-monitor
+davidke+    1557  0.0  0.3 548596 13636 ?        Sl   Aug23   0:00 /usr/libexec/goa-daemon
+davidke+    1567  0.0  0.1 387640  6088 ?        Sl   Aug23   0:01 /usr/libexec/goa-identity-service
+davidke+    1574  0.0  0.1 234804  4340 ?        Ssl  Aug23   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+root        1586  0.0  0.1 242916  6684 ?        Ssl  Aug23   0:00 /usr/lib/upower/upowerd
+davidke+    1715  0.0  0.1 161448  5216 ?        Ssl  Aug23   0:00 /usr/libexec/gvfsd-metadata
+davidke+    1864  0.0  0.2 580852  8424 ?        Sl   Aug23   0:00 /usr/libexec/gnome-shell-calendar-server
+davidke+    1872  0.0  0.2 1003848 11776 ?       Ssl  Aug23   0:00 /usr/libexec/evolution-source-registry
+davidke+    1885  0.0  0.2 1116348 11220 ?       Ssl  Aug23   0:00 /usr/libexec/evolution-calendar-factory
+davidke+    1906  0.0  0.1 156228  4664 ?        Sl   Aug23   0:00 /usr/libexec/dconf-service
+davidke+    1908  0.0  0.2 680656 10756 ?        Ssl  Aug23   0:00 /usr/libexec/evolution-addressbook-factory
+colord      2011  0.0  0.2 245348 11808 ?        Ssl  Aug23   0:00 /usr/libexec/colord
+davidke+    2065  0.0  0.1 231800  4472 ?        Sl   Aug23   0:00 /usr/libexec/gsd-disk-utility-notify
+davidke+    2234  0.0  0.2 1068560 8272 ?        Ssl  Aug23   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+davidke+    2253  0.0  1.3 191696 55840 ?        S    Aug23   1:03 /usr/bin/Xtigervnc :1 -desktop linux.c.csce-313-kebo.internal:1 (davidkebo) -auth /home/davidkebo/.Xauthority -geometry 1900x1200 -depth 24 -rfbwait 30000 -rfbauth /home/davidkebo/.vnc/passwd -rfbport 5901 -pn -SecurityTypes VncAuth,TLSVnc
+davidke+    2261  0.0  0.1  19212  7420 ?        S    Aug23   0:00 /usr/bin/perl /usr/bin/vncserver
+davidke+    2262  0.0  0.0   2616   456 ?        S    Aug23   0:00 /bin/sh /etc/X11/Xvnc-session
+davidke+    2263  0.0  0.0  10100  2576 ?        S    Aug23   0:00 vncconfig -iconic
+davidke+    2264  0.0  0.2 558332 10876 ?        Sl   Aug23   0:00 /usr/libexec/gnome-session-binary --systemd
+davidke+    2329  0.0  0.1 305396  4972 ?        Ssl  Aug23   0:00 /usr/libexec/at-spi-bus-launcher
+davidke+    2334  0.0  0.0   7244  3756 ?        S    Aug23   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+davidke+    2349  0.0  0.1 239188  4848 ?        Sl   Aug23   0:00 /usr/bin/gnome-keyring-daemon --start --components=secrets
+davidke+    2359  0.0  5.5 4163964 221300 ?      Sl   Aug23  17:06 /usr/bin/gnome-shell
+davidke+    2372  0.0  0.1 310100  6636 ?        Sl   Aug23   0:00 ibus-daemon --panel disable --xim
+davidke+    2376  0.0  0.1 161856  5624 ?        Sl   Aug23   0:00 /usr/libexec/ibus-memconf
+davidke+    2377  0.0  0.3 268672 15672 ?        Sl   Aug23   0:01 /usr/libexec/ibus-extension-gtk3
+davidke+    2381  0.0  0.2 190684 11620 ?        Sl   Aug23   0:00 /usr/libexec/ibus-x11 --kill-daemon
+davidke+    2384  0.0  0.1 235656  5640 ?        Sl   Aug23   0:00 /usr/libexec/ibus-portal
+davidke+    2391  0.0  0.1 162908  4760 ?        Sl   Aug23   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+davidke+    2404  0.0  0.3 2597688 14060 ?       Sl   Aug23   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+davidke+    2412  0.0  0.1 457820  5720 ?        Sl   Aug23   0:00 /usr/libexec/gsd-usb-protection
+davidke+    2418  0.0  0.3 893896 13148 ?        Sl   Aug23   0:00 /usr/libexec/gsd-media-keys
+davidke+    2419  0.0  0.1 456252  4792 ?        Sl   Aug23   0:00 /usr/libexec/gsd-rfkill
+davidke+    2421  0.0  0.1 308788  5480 ?        Sl   Aug23   0:00 /usr/libexec/gsd-a11y-settings
+davidke+    2423  0.0  0.3 338224 12168 ?        Sl   Aug23   0:00 /usr/libexec/gsd-wacom
+davidke+    2425  0.0  0.3 486584 12456 ?        Sl   Aug23   0:03 /usr/libexec/gsd-power
+davidke+    2426  0.0  0.1 161848  5628 ?        Sl   Aug23   0:00 /usr/libexec/ibus-engine-simple
+davidke+    2430  0.0  0.1 234660  4904 ?        Sl   Aug23   0:00 /usr/libexec/gsd-screensaver-proxy
+davidke+    2433  0.0  0.3 560716 12520 ?        Sl   Aug23   0:14 /usr/libexec/gsd-color
+davidke+    2434  0.0  0.3 338400 12144 ?        Sl   Aug23   0:00 /usr/libexec/gsd-xsettings
+davidke+    2436  0.0  0.1 386952  5784 ?        Sl   Aug23   0:00 /usr/libexec/gsd-wwan
+davidke+    2439  0.0  0.2 247376  8136 ?        Sl   Aug23   0:00 /usr/libexec/gsd-print-notifications
+davidke+    2442  0.0  0.1 463784  6648 ?        Sl   Aug23   0:00 /usr/libexec/gsd-sharing
+davidke+    2445  0.0  0.2 372744  8888 ?        Sl   Aug23   0:00 /usr/libexec/gsd-datetime
+davidke+    2448  0.0  0.1 461752  4560 ?        Sl   Aug23   0:00 /usr/libexec/gsd-smartcard
+davidke+    2451  0.0  0.1 310976  6168 ?        Sl   Aug23   0:59 /usr/libexec/gsd-housekeeping
+davidke+    2452  0.0  0.1 318480  6956 ?        Sl   Aug23   0:00 /usr/libexec/gsd-sound
+davidke+    2456  0.0  0.2 338704 11788 ?        Sl   Aug23   0:00 /usr/libexec/gsd-keyboard
+davidke+    2496  0.0  0.2 341336  8924 ?        Sl   Aug23   0:00 /usr/libexec/gsd-printer
+davidke+    2545  0.0  0.1 231800  5688 ?        Sl   Aug23   0:00 /usr/libexec/gsd-disk-utility-notify
+davidke+    2547  0.0  0.4 708304 18228 ?        Sl   Aug23   0:04 /usr/libexec/evolution-data-server/evolution-alarm-notify
+davidke+    2623  0.0  0.1 312976  6320 ?        Sl   Aug23   0:00 /usr/libexec/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0
+davidke+    2637  0.4  5.2 823944 210364 ?       Sl   Aug23 169:22 /usr/bin/gnome-software --gapplication-service
+davidke+    3272  0.0  0.4 466932 17768 ?        Ssl  Aug23   0:00 /usr/libexec/gnome-terminal-server
+davidke+    3345  0.0  0.0  10012  3920 pts/3    Ss+  Aug23   0:00 bash
+root       33941  0.0  0.0      0     0 ?        I<   Sep01   0:00 [xfsalloc]
+root       33942  0.0  0.0      0     0 ?        I<   Sep01   0:00 [xfs_mru_cache]
+root       49145  0.0  0.0 114108   684 ?        Sl   Sep06   0:51 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 9f1e6b943e11f632d6b561cf0b041e9d4c422580ba7beda81aab26854303c45f -address /run/containerd/containerd.sock
+root       49147  0.0  0.0 112700   384 ?        Sl   Sep06   0:42 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 82c8b7c240e13370c125b961aac71472a1d0400182dfd4ef4c7696dcfdc36fe6 -address /run/containerd/containerd.sock
+root       49183  0.0  0.0 112700   960 ?        Sl   Sep06   0:58 /usr/bin/containerd-shim-runc-v2 -namespace moby -id ff78dacb1454cce10e87af6c587679ae30ed95ec96bfa2b1bae349eec33d10b7 -address /run/containerd/containerd.sock
+root       49208  0.0  0.0   2552    60 ?        Ss+  Sep06   1:10 tail -f /dev/null
+root       49224  0.0  0.0   2552    64 ?        Ss+  Sep06   1:10 tail -f /dev/null
+root       49239  0.0  0.0   2616    68 ?        Ss   Sep06   0:00 /bin/sh -c /bin/bash
+root       49264  0.0  0.0   4116   324 ?        S+   Sep06   0:00 /bin/bash
+root       49352  0.0  0.0   5704   272 ?        Ss   Sep06   0:00 /usr/sbin/inetd
+root       49379  0.0  0.0   5704   268 ?        Ss   Sep06   0:00 /usr/sbin/inetd
+root       76451  0.0  0.6 1022416 25704 ?       Ssl  Sep12   1:07 /usr/lib/snapd/snapd
+davidke+  144956  0.0  0.0   6040   452 ?        Ss   Sep18   0:00 ssh-agent
+davidke+  145021  0.0  0.0   6040   452 ?        Ss   Sep18   0:00 /usr/bin/ssh-agent
+davidke+  145110  0.0  0.0   6040   452 ?        Ss   Sep18   0:00 /usr/bin/ssh-agent
+davidke+  145193  0.0  0.0   6040   452 ?        Ss   Sep18   0:00 /usr/bin/ssh-agent
+davidke+  148235  0.0  0.0   2616   596 ?        S    Sep19   0:00 sh /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/bin/code-server --start-server --host=127.0.0.1 --accept-server-license-terms --enable-remote-auto-shutdown --port=0 --telemetry-level all --connection-token-file /home/davidkebo/.vscode-server/.e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb.token
+davidke+  148245  0.1  2.3 947944 95960 ?        Sl   Sep19   2:40 /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/node /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/server-main.js --start-server --host=127.0.0.1 --accept-server-license-terms --enable-remote-auto-shutdown --port=0 --telemetry-level all --connection-token-file /home/davidkebo/.vscode-server/.e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb.token
+davidke+  148287  0.0  1.6 747536 67456 ?        Sl   Sep19   2:14 /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/node /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/bootstrap-fork --type=ptyHost --logsPath /home/davidkebo/.vscode-server/data/logs/20220919T023625
+davidke+  150043  0.3  3.8 1008856 152836 ?      Sl   Sep19   4:24 /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/node /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/bootstrap-fork --type=extensionHost --transformURIs --useHostProxy=false
+davidke+  150098  0.0  1.9 1181340 79136 ?       Sl   Sep19   1:13 /home/davidkebo/.vscode-server/extensions/ms-vscode.cpptools-1.12.4-linux-x64/bin/cpptools
+davidke+  150147  0.0  0.1  10156  4996 pts/1    Ss+  Sep19   0:00 /usr/bin/bash --init-file /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+davidke+  150179  0.0  1.1 590228 46564 ?        Sl   Sep19   0:05 /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/node /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=150043
+root      151357  0.0  0.1  25896  7672 ?        Ss   00:00   0:00 /usr/sbin/cupsd -l
+root      151358  0.0  0.2 178392 10332 ?        Ssl  00:00   0:00 /usr/sbin/cups-browsed
+root      156099  0.0  0.0      0     0 ?        I    10:58   0:05 [kworker/1:1-events]
+davidke+  157062  0.0  0.1  10680  5864 pts/2    Ss+  11:43   0:00 /usr/bin/bash --init-file /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+davidke+  159791 83.1  0.0   5888  1580 pts/2    R    12:29 287:54 ./pcb
+davidke+  159890 83.1  0.0   5888  1496 pts/2    R    12:29 287:28 ./pcb
+davidke+  163235  0.0  0.0 245168  3316 ?        Sl   13:02   0:02 /home/davidkebo/.vscode-server/extensions/ms-vscode.cpptools-1.12.4-linux-x64/bin/cpptools-srv 150098 {6C0B22B6-6E56-4BD7-AC48-1E4D0319607A}
+root      163686  0.0  0.0      0     0 ?        I    13:16   0:08 [kworker/0:2-events]
+davidke+  164957  0.0  0.1  10284  5476 pts/4    Ss+  15:14   0:00 /usr/bin/bash --init-file /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+davidke+  165483  0.0  0.1  10264  5348 pts/5    Ss+  15:21   0:00 /usr/bin/bash --init-file /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+davidke+  166268  0.0  0.1 21474912432 5732 pts/2 T   15:35   0:00 ./divide
+davidke+  168451 48.7  0.0   5888  1528 pts/2    R    16:29  51:37 ./memory
+davidke+  168651 48.6  0.0   5888  1532 pts/2    R    16:30  51:09 ./memory
+davidke+  169230  0.1  1.1 835504 47184 ?        Sl   16:35   0:06 /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/node /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/bootstrap-fork --type=fileWatcher
+davidke+  171218  0.0  0.1  11212  6424 pts/6    Ss+  17:12   0:00 /usr/bin/bash --init-file /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+davidke+  171596  0.0  0.0 245168  3372 ?        Sl   17:15   0:00 /home/davidkebo/.vscode-server/extensions/ms-vscode.cpptools-1.12.4-linux-x64/bin/cpptools-srv 150098 {2240C9B0-E184-4F7A-B82B-7FE436D16D69}
+root      172650  0.0  0.0      0     0 ?        I    17:35   0:00 [kworker/0:1-events]
+root      172800  0.0  0.0      0     0 ?        I    17:43   0:00 [kworker/1:2-events]
+root      172804  0.0  0.2  13852  8832 ?        Ss   17:48   0:00 sshd: davidkebo [priv]
+davidke+  172902  0.0  0.1  13992  6020 ?        S    17:48   0:01 sshd: davidkebo@notty
+davidke+  172903  0.0  0.0   8836  3700 ?        Ss   17:48   0:00 -bash
+davidke+  172908  0.0  0.0   9152  3996 ?        S    17:48   0:00 bash
+root      173001  0.0  0.0      0     0 ?        I    17:51   0:00 [kworker/u4:0-events_power_efficient]
+root      173015  0.0  0.0      0     0 ?        I    18:02   0:00 [kworker/u4:2-events_unbound]
+davidke+  173022  0.0  0.3 4802120 13860 ?       Sl   18:06   0:00 /home/davidkebo/.vscode-server/extensions/ms-vscode.cpptools-1.12.4-linux-x64/bin/cpptools-srv 150098 {9346D532-39E6-4DB1-91DE-035A48A382C9}
+davidke+  173110  0.0  0.1  10156  5116 pts/7    Ss+  18:06   0:00 /usr/bin/bash --init-file /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+davidke+  173314  0.0  0.1  10156  5336 pts/8    Ss   18:07   0:00 /usr/bin/bash --init-file /home/davidkebo/.vscode-server/bin/e7f30e38c5a4efafeec8ad52861eb772a9ee4dfb/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+root      173729  0.0  0.0      0     0 ?        I    18:10   0:00 [kworker/u4:1-events_unbound]
+davidke+  174117  0.0  0.0  10816  3500 pts/8    R+   18:15   0:00 ps -aux
