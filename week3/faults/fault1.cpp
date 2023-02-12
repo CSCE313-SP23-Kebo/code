@@ -6,6 +6,6 @@ using namespace std;
 int main()
 {
 int arr[2];
-arr[3] = 10; // Accessing out of bound
+arr[1] = 10; // Accessing out of bound
 return 0;
 }

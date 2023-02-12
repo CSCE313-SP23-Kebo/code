@@ -29,8 +29,9 @@ int main(int argc, char* argv[]){
 
   if (child_pid == 0)
   {
-    /* Child closes write end of p2c, read of c2p */
+    /* Child closes write end of p2c*/
     close (p2cfd[1]);
+    /* Child closes read end of c2p */
     close (c2pfd[0]);
     bytes_read = read (p2cfd[0], buffer, 10);
     if (bytes_read <= 0)
@@ -43,9 +44,10 @@ int main(int argc, char* argv[]){
     exit (0);
   }
 
-  /* Parent closes read end of p2c, write of c2p */
-  close (p2cfd[0]);
-  close (c2pfd[1]);
+  /* Parent closes read end of p2c */
+  close (p2cfd[0]); // sys call 1
+  /*Parent closes write end of c2p*/
+  close (c2pfd[1]); // sys call 2
 
   /* Parent sends 'hello' and waits */
   strncpy (buffer, "hello", sizeof (buffer));

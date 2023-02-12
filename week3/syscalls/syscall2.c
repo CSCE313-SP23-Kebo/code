@@ -1,5 +1,6 @@
 /*
-Example: C program to illustrate the open system call
+Example: C program to illustrate the open system call.
+Review of file descriptors.
 */
 #include<stdio.h>
 #include<fcntl.h>

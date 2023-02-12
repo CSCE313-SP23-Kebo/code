@@ -8,7 +8,7 @@ Example: fork() and pipe()
 #include <sys/wait.h>
 
 int main(int argc, char* argv[]){
-	int pipefds[2];
+	int pipefds[2]; // Array of file descriptor
 	pid_t pid;
 	char buf[30];
 	//create pipe
@@ -26,7 +26,8 @@ int main(int argc, char* argv[]){
 	pid>0: in the context of the parent and pid is the process ID of the child
 	pid<0: failure
 	*/
-
+ 
+    // If PID is strictly positive - the value is the process ID of the child process
 	if(pid>0){
 		printf("PARENT: write in pipe.\n");
 		printf("PARENT: write in pipe, to %d\n", pid);
@@ -37,11 +38,13 @@ int main(int argc, char* argv[]){
 		//after finishing writing, parent close the write end
 		close(pipefds[1]);
 		//parent wait for child
-		wait(NULL);
+		wait(NULL); // Wait for the child process to read the string.
 	}else{
 		//child close the write end
 		close(pipefds[1]); // Close the write end on the child
 		//child read from the pipe read end until the pipe is em
+
+		// Read 1 byte at at time from the pipe
 		while(read(pipefds[0],buf,1)==1){
 			printf("CHILD read from pipe --%s\n",buf);
 		}

@@ -1,9 +1,0 @@
-a.out
-myfifo1
-myfifo2
-myfiles.txt
-pipe0.c
-pipe1.c
-pipe2.c
-pipe3.c
-pipe4.c
