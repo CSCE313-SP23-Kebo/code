@@ -8,9 +8,12 @@ int main ()
 
   child_pid = fork ();
   if (child_pid > 0) {
-    sleep (60);
+    // This is the parent process
+    sleep (6);
   }
   else {
+    // This is the child process
+    // Child process exits
     exit (0);
   }
   return 0;

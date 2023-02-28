@@ -1,6 +1,6 @@
 /*
 Example: Divide by zero fault, not handled.
-C++ program to illustrate and background process data
+C++ program to illustrate, background process data
 */
 
 #include <iostream>

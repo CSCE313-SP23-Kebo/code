@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "Please enter the values of A and B"
+read A
+read B
+sum=$((A+B))
+echo "Addition of $A and $B is $sum"
+
+((sub=A-B))
+echo "Subtraction of $A and $B is $sub"
+
+num1=A
+num2=B
+
+((multiply=num1*num2))
+echo "Multiplication $A and $B is $multiply"
+
+division=$((num1/num2))
+echo "Division of $A and $B is $division"

@@ -12,7 +12,7 @@ int main()
 {
     int sz;
 
-    int fd = open("foo.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    int fd = open("foo.txt", O_WRONLY | O_CREAT | O_TRUNC, 00644);
     if (fd < 0)
     {
         perror("r1");
