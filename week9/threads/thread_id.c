@@ -1,5 +1,6 @@
 /*
 Example: this program prints thread IDs
+Note: To compile a C program with pthread.h in LINUX using GCC or G++, use the –lpthread option after the compile command.
 */
 
 #include "../apue.h"

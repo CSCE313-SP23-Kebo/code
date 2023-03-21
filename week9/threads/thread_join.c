@@ -1,5 +1,6 @@
 /*
 Example: pthread_join() — Wait for a thread to end
+Note: To compile a C program with pthread.h in LINUX using GCC or G++, use the –lpthread option after the compile command.
 */
 
 #define _OPEN_THREADS

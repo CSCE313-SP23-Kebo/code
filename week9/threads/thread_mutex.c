@@ -1,5 +1,6 @@
 /*
 Example of two threads running with MUTEX synchronization.
+Note: To compile a C program with pthread.h in LINUX using GCC or G++, use the –lpthread option after the compile command.
 */
 
 #include <pthread.h>
