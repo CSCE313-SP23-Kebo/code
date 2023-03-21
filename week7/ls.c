@@ -1,5 +1,6 @@
 /*
-Example: This program lists all the files in a directory
+Ths program reads the content of a directory
+and prints all the files and directories in it 
 */
 
 #include "apue.h"

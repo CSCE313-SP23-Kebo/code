@@ -20,14 +20,14 @@ int main()
     {
         puts("1- contents of root:");
         while ((entry = readdir(dir)) != NULL)
-            printf("%s ", entry->d_name);
+            printf("%s \n", entry->d_name);
 
         puts("");
         rewinddir(dir); // Rewind to the 'beginning' of the parent folder
     
         puts("\n2- Try to acces the directory content once again");
         while ((entry = readdir(dir)) != NULL)
-            printf("%s ", entry->d_name);
+            printf("%s \n", entry->d_name);
         closedir(dir);
         puts("");
     }

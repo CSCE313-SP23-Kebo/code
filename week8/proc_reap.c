@@ -1,19 +1,21 @@
 /*
 Example: Reaping child processes
+This program receives signals from children processes and ends them one at a time.
 */
 
 #include "apue.h"
 #include <sys/types.h>
 #include <sys/wait.h>
 
+// Handler for the SIGCHLD signal
 void do_something (int sig){
     printf("SIGCHLD received: change in status of child.\n");
-    wait (0);
+    wait (0); // Waiting on any child process that returns
 }
 
 int main (){
-    // signal handler: capture a change in the status of the child process and do somethind.
-    signal (SIGCHLD, do_something);
+    // signal handler: capture a change in the status of the child process and do something.
+    signal (SIGCHLD, do_something); // *CHILD or *PARENT 
     
     // Create five child processes 
     // The i-th process sleeps for i seconds and then dies

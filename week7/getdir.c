@@ -7,7 +7,7 @@ Example: this program changes to a specific directory and then calls getcwd to p
 #undef _POSIX_SOURCE
 #include <stdio.h>
 
-main() {
+int main() {
   char cwd[256];
 
   if (chdir("/tmp") != 0)
@@ -18,4 +18,5 @@ main() {
     else
       printf("current working directory is: %s\n", cwd);
   }
+  return 0;
 }

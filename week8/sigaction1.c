@@ -12,15 +12,16 @@ static void handler(int signum)
 
 int main()
 {
-    struct sigaction sa;
+    struct sigaction sa; // Struct with attributes: handler (pointer to a fct), sigaction (pointer to a fct), mask , flags.
 
     // Define the action the signal will take
     sa.sa_handler = handler;
 
-    sigemptyset(&sa.sa_mask);
+    // Empty the mask set for this sigaction -> this means that we can capture ALL signals
+    sigemptyset(&sa.sa_mask); 
 
     // System calls interrupted by this signal are automatically restarted.
-    sa.sa_flags = SA_RESTART;
+    sa.sa_flags = SA_RESTART | SA_SIGINFO;
 
     // Change the action of SIGINT
     if (sigaction(SIGINT, &sa, NULL) == -1)

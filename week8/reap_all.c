@@ -10,7 +10,7 @@ void do_something(int sig)
 {
     printf("SIGCHLD received: change in status of child.\n");
     // Wait on any child process.
-    while (waitpid(-1, 0, 0) != -1)
+    while (waitpid(-1, 0, 0) != -1) // Wait on any child
         ;
 }
 
@@ -23,7 +23,6 @@ int main()
     // Each process sleeps for 5 seconds.
     for (int i = 1; i <= 5; i++)
     {
-
         // Fork a new child process
         int pid = fork();
 

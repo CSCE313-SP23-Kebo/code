@@ -14,13 +14,13 @@ int main()
 {
     // Option 1: Handle the signal
     // Define what to do when a signal is received - sighandler is the disposition when CTRL-C is received.
-    signal(SIGINT, sighandler);
+    //signal(SIGINT, sighandler);
 
     // Option 2: ignore the signal
-    // signal(SIGINT, SIG_IGN);
+    // signal(SIGINT, SIG_DFL);
 
     // Option 3: Use the default behavior
-    // signal(SIGINT, SIG_DFL);
+    signal(SIGINT, SIG_IGN);
 
     for (int i = 0; i < 5; i++)
     {

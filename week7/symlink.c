@@ -1,3 +1,7 @@
+/*
+This program creates symbolic links
+*/
+
 #define _POSIX1_SOURCE 2
 #include <fcntl.h>
 #include <sys/stat.h>
@@ -32,6 +36,8 @@ int main()
             puts("after first unlink()");
             system("ls -il test.*");
             unlink(sln);
+            puts("after second unlink()");
+            system("ls -il");
         }
     }
 }

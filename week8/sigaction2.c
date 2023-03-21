@@ -34,8 +34,9 @@ int main(int argc, char *argv[])
     /*
      * CONFIGURATION #1
      * Set up a signal handler by setting the signal mask to the empty signal set and
-     * using the do-not-defer signal, and reset the signal handler to the SIG_DFL signal flag options.
+     * using the DO-NOT-DEFER flag, and reset the signal handler to the SIG_DFL signal flag options.
      */
+    // No blocking signal
     sigemptyset(&sigact.sa_mask);
     sigact.sa_flags = 0;
     sigact.sa_flags = sigact.sa_flags | SA_NODEFER | SA_RESETHAND;
@@ -49,7 +50,8 @@ int main(int argc, char *argv[])
     kill(getpid(), SIGUSR1);
 
     /*
-     * Get the current value of the signal handling action for SIGUSR1.  The signal-catching function should have been reset to SIG_DFL
+     * Get the current value of the signal handling action for SIGUSR1.
+     * The signal-catching function should have been reset to SIG_DFL
      */
     sigaction(SIGUSR1, NULL, &old_sigact);
     if (old_sigact.sa_handler != SIG_DFL)
@@ -60,7 +62,7 @@ int main(int argc, char *argv[])
      * Reset the signal-handling action for SIGUSR1
      */
     sigemptyset(&sigact.sa_mask);
-    sigaddset(&sigact.sa_mask, SIGUSR2);
+    sigaddset(&sigact.sa_mask, SIGUSR2); // Block SIGUSR2 by adding it to the list of excluded signals
     sigact.sa_flags = 0;
     sigact.sa_handler = catcher;
     sigaction(SIGUSR1, &sigact, NULL);
