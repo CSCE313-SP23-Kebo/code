@@ -19,7 +19,7 @@ void* place_order(void* arg)
 
 	printf("\n Order #%d received\n", order);
 
-	// Delay for a few couple
+	// Delay for some time
 	for (i = 0; i < (0xFFFFFFFF); i++) 
 		;
 	printf("\n Order #%d is ready\n", order);

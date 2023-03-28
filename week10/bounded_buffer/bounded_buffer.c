@@ -1,8 +1,6 @@
 /**
  * Thread-safe bounded buffer
- *
- * Multiple threads accessing the a shared bounded buffer.
- *
+ * Multiple threads accessing a shared bounded buffer.
  */
 
 #include <stdio.h>     /* printf(), fprintf */
@@ -74,8 +72,7 @@ int remove_item(int *item, long int id)
  * multiple producer threads
  * @return nothing
  */
-void *
-producer(void *param)
+void * producer(void *param)
 {
     int item, i;
     long int id = (long int)param;
@@ -101,8 +98,7 @@ producer(void *param)
  * multiple consumer threads
  * @return nothing
  */
-void *
-consumer(void *param)
+void * consumer(void *param)
 {
     int item, i;
     long int id = (long int)param;

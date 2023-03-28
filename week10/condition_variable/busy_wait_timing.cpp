@@ -1,3 +1,7 @@
+/*
+Example: Thread synchronization without condition variable. Busy-wait implementation
+*/
+
 #include <chrono>
 #include <mutex>
 #include <thread>

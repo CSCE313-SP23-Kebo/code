@@ -11,11 +11,12 @@ Note: To compile a C program with pthread.h in LINUX using GCC or G++, use the â
 
 pthread_t tid[2];
 int order;
-pthread_mutex_t lock; // MUTEX
+pthread_mutex_t key; // MUTEX
 
 void *place_order(void *arg)
 {
-	pthread_mutex_lock(&lock); 
+	// Acquire a mutex lock
+	pthread_mutex_lock(&key); 
 
 	unsigned long i = 0;
 	order += 1;
@@ -27,7 +28,8 @@ void *place_order(void *arg)
 
 	printf("\n Order #%d is ready\n", order);
 
-	pthread_mutex_unlock(&lock);
+	// Release the mutex lock
+	pthread_mutex_unlock(&key);
 
 	return NULL;
 }
@@ -37,7 +39,7 @@ int main(void)
 	int i = 0;
 	int error;
 
-	if (pthread_mutex_init(&lock, NULL) != 0)
+	if (pthread_mutex_init(&key, NULL) != 0)
 	{
 		printf("\n mutex init has failed\n");
 		return 1;
@@ -55,7 +57,7 @@ int main(void)
 	pthread_join(tid[0], NULL);
 	pthread_join(tid[1], NULL);
 
-	pthread_mutex_destroy(&lock);
+	pthread_mutex_destroy(&key);
 
 	return 0;
 }

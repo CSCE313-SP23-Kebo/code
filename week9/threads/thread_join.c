@@ -8,7 +8,7 @@ Note: To compile a C program with pthread.h in LINUX using GCC or G++, use the â
 #include <stdlib.h>
 #include <stdio.h>
 
-void *thread(void *arg)
+void *thread_fct(void *arg)
 {
     char *ret;
     printf("thread() entered with argument '%s'\n", arg);
@@ -26,7 +26,7 @@ int main()
     pthread_t thid;
     void *ret;
 
-    if (pthread_create(&thid, NULL, thread, "thread 1") != 0)
+    if (pthread_create(&thid, NULL, thread_fct, "thread 1") != 0)
     {
         printf("pthread_create() error");
         exit(1);
