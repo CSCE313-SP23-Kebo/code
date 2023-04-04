@@ -10,20 +10,21 @@ Example: Thread synchronization with condition variable. No busy-wait.
 using namespace std;
 
 // Global variables
-std::mutex g_mutex;
-std::condition_variable g_cv;
+std::mutex g_mutex; // locking a block of instructions
+std::condition_variable g_cv; // condition variable
 bool g_ready = false;
 
 void workThread() {
-  // Simulate work for 60 seconds 
   std::cout << "Starting work thread ... \n";
   std::this_thread::sleep_for(std::chrono::seconds(60));
   std::unique_lock<std::mutex> ul(g_mutex);
+  // Data generated
   g_ready = true;
-  ul.unlock();
-  g_cv.notify_one();
+  ul.unlock(); // release lock
+  g_cv.notify_one(); // Notify outside of the critical section
 }
 
+// Consumer
 void waitThread() {
   std::cout << "Inside wait thread ... \n";
   std::unique_lock<std::mutex> ul(g_mutex);
