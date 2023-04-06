@@ -26,21 +26,21 @@ int main(int argc, char *argv[])
         exit(0);
     }
     /*
-    Get port number
+    Get and convert the port number from the second argument passed to the program
     */
-    portno = atoi(argv[2]);
+    // TODO
 
     /*
-    Create socket
+    Create a new socket of type SOCK_STREAM using the Internet Protocol version 4 (IPv4) address family
     */
     // TODO
     if (sockfd < 0)
         error("ERROR opening socket");
 
     /*
-    Get the server hostname
+    Get the server hostname from the first argument passed to the program using the gethostbyname() function
     */
-    server = gethostbyname(argv[1]);
+    // TODO
     if (server == NULL)
     {
         fprintf(stderr, "ERROR, no such host\n");
@@ -57,8 +57,8 @@ int main(int argc, char *argv[])
     // TODO: Add IPV4 address family to the server address struct
     // TODO: Add port number to the server address struct
 
-    /*Connect to server*/
-    // TODO: Connect to the server
+    /*Establish a connect to the server*/
+    // TODO
 
     printf("Please enter the message: ");
     bzero(buffer, 256);

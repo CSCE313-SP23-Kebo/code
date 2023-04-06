@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     }
 
     /*
-    Create a socket
+    Create a new socket of type SOCK_STREAM using the Internet Protocol version 4 (IPv4) address family
     */
     // TODO
     if (sockfd < 0)
