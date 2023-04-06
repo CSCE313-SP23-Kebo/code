@@ -1,3 +1,7 @@
+/*
+Usage: .\client localhost <server port number>
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
