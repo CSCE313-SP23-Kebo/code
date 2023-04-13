@@ -19,4 +19,5 @@ def spoof_pkt(pkt):
         send(spoof, verbose=0)
 
 
-pkt = sniff(iface='br-5336efd1c0d5', filter='icmp', prn=spoof_pkt)
+#pkt = sniff(iface='ens4', filter='icmp', prn=spoof_pkt)
+pkt = sniff(filter='icmp', prn=spoof_pkt)

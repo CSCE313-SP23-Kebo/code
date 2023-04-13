@@ -1,3 +1,13 @@
+'''
+Sniff packets on the network.
+
+Note:
+Use the following commands to see your network interface:
+ip addr show
+or
+ifconfig -a
+'''
+
 #!/bin/env python3
 from scapy.all import *
 
@@ -9,6 +19,8 @@ def print_pkt(pkt):
    print("Protocol:", pkt[IP].proto)
    print("\n")
 
-#pkt = sniff(iface='br-5336efd1c0d5', filter='ip',prn=print_pkt)
-#pkt = sniff(iface='br-5336efd1c0d5', filter='ip and dst port 23',prn=print_pkt)
-pkt = sniff(iface='br-5336efd1c0d5', filter='dst port 23',prn=print_pkt)
+#pkt = sniff(filter='icmp', prn=print_pkt) # no interface
+#pkt = sniff(iface='ens4', filter='icmp', prn=print_pkt) # no interface 
+#pkt = sniff(iface='ens4', filter='ip',prn=print_pkt)
+pkt = sniff(iface='ens4', filter='ip and dst port 23',prn=print_pkt)
+#pkt = sniff(iface='ens4', filter='dst port 23',prn=print_pkt)
